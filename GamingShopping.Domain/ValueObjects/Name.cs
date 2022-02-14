@@ -19,6 +19,11 @@ namespace GamingShopping.Domain.ValueObjects
                 .IsGreaterThan(GivenName, 2, "Name.FamilyName", "O sobrenome é muito curto."));
         }
         public string GivenName { get; private set; }
-        public string FamilyName { get; private set; }    
+        public string FamilyName { get; private set; }
+
+        public override string ToString()
+        {
+            return GivenName+" "+FamilyName;
+        }
     }
 }

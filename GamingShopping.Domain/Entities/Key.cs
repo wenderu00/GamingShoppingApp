@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace GamingShopping.Domain.Entities
 {
-    internal class Key : Product
+    public class Key : Product
     {
-        public Game Game { get; private set; }
+        public Key(Game game,double price,User seeler): base(price, seeler)
+        {
+            KeyCode = game.Code + Id.ToString().Replace("-", "");
+        }
+        public string KeyCode { get; private set; }
     }
 }
