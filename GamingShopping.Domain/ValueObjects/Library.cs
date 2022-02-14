@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GamingShopping.Domain.ValueObjects
 {
-    internal class Biblioteca
+    internal class Library : ValueObject
     {
+        public IList<>
     }
 }

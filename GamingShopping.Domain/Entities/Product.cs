@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace GamingShopping.Domain.Entities
 {
-    internal class Product
+    internal class Product :Entity
     {
+        public string Code { get; private set; }
+        public double Price { get; private set; }
+        public User Seeler { get; private set; }
+       
+        
     }
 }

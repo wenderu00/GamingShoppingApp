@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GamingShopping.Domain.Entities
 {
-    public class User : Entity
+    public abstract class User : Entity
     {
         public User(Name name, string email)
         {

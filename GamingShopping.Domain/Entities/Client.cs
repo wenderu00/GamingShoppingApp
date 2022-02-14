@@ -13,5 +13,6 @@ namespace GamingShopping.Domain.Entities
         {
             
         }
+        
     }
 }
